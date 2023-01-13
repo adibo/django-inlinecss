@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
-
 import io
 import os
 import sys
@@ -21,14 +16,13 @@ DESCRIPTION = 'A Django app useful for inlining CSS (primarily for e-mails)'
 URL = 'https://github.com/roverdotcom/django-inlinecss'
 EMAIL = 'philip@rover.com'
 AUTHOR = 'Philip Kimmey'
-REQUIRES_PYTHON = '>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <3.7'
+REQUIRES_PYTHON = '!=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <3.11'
 VERSION = None
 
 # What packages are required for this module to be executed?
 REQUIRED = [
     'Django>=1.11',
     'pynliner',
-    'future>=0.16.0',
 ]
 
 # What packages are required only for tests?
@@ -134,12 +128,14 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'Topic :: Communications :: Email',
         'Topic :: Text Processing :: Markup :: HTML',
     ],
